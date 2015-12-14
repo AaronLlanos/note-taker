@@ -1,0 +1,16 @@
+<ion-view view-title="Notes">
+  <ion-content class="padding">
+    <div class="list card" ng-repeat="note in notes">
+      <a href="#/tab/notes/{{note.id}}" class="item item-body">
+        <div class="item item-body">
+            {{note.title}}
+            <hr>
+            {{note.body}}
+        </div>
+      </a>
+    </div>
+  </ion-content>
+    <a class="button button-float">
+      <i class="icon ion-plus"></i>
+    </a> 
+</ion-view>
